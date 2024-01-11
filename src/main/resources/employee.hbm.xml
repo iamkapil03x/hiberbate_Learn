@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hiberbate.entity.Employee" table="new">
+        <id name="id">
+            <generator class="increment" >
+                <param name="sequence">Emploo....</param>
+            </generator>
+        </id>
+        <property name="name" column="user_name"></property>
+        <property name="gender" column="gender"></property>
+    </class>
+</hibernate-mapping>
