@@ -31,17 +31,17 @@ public class App {
 		System.out.println(list1.get(0));
 
 //		HQL to get records with pagination
-//		Query query2=session.createQuery("from Employee");
-//		query2.setFirstResult(5);
-//		query2.setMaxResults(5);
-//		List list2=query2.list();//will return the records from 5 to 10th number
-//		System.out.println("5 to 10: "+list2);
+		Query query2=session.createQuery("from Employee");
+		query2.setFirstResult(5);
+		query2.setMaxResults(5);
+		List list2=query2.list();//will return the records from 5 to 10th number
+		System.out.println("5 to 10: "+list2);
 
 //		HQL update query Using Named Parameters
-		Query query=session.createQuery("update Employee set name=:n where id=:i");
-		query.setParameter("n","Udit kumar");
-		query.setParameter("i",1);
-		System.out.println("status: "+q.executeUpdate());
+//		Query query=session.createQuery("update Employee set name=:n where id=:i");
+//		query.setParameter("n","Udit kumar");
+//		query.setParameter("i",1);
+//		System.out.println("status: "+query.executeUpdate());
 
 //		HQL delete query
 //		Query query=session.createQuery("delete from Employee where id= 20");
