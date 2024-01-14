@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="hiberbate.entity.Employee" table="new">
+    <class name="hiberbate.entity.Employee" table="hum">
         <id name="id">
             <generator class="increment" >
                 <param name="sequence">Emploo....</param>
@@ -11,5 +11,7 @@
         </id>
         <property name="name" column="user_name"></property>
         <property name="gender" column="gender"></property>
+        <property name="salary" column="salary"></property>
+        <property name="address" column="adress"></property>
     </class>
 </hibernate-mapping>
