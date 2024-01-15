@@ -3,15 +3,13 @@
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="hiberbate.entity.Employee" table="hum">
+    <class name="hiberbate.entity.Employee" table="new_One">
         <id name="id">
             <generator class="increment" >
                 <param name="sequence">Emploo....</param>
             </generator>
         </id>
-        <property name="name" column="user_name"></property>
-        <property name="gender" column="gender"></property>
-        <property name="salary" column="salary"></property>
-        <property name="address" column="adress"></property>
+        <property name="name" column="User_Name"></property>
+        <property name="id" column="User_IdNo."></property>
     </class>
 </hibernate-mapping>
